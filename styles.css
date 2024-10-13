@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: gray;
+}
+
+.container {
+    text-align: center;
+}
+
+.profile {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.notification {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    bottom: 15px;
+    right : 150px;
+}
+
+.username a {
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.username a:hover {
+    color: silver;
+    text-decoration: underline;
+}
+
+.input-section, .contact-input {
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}

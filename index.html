@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="avatar" style="background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png');">
+                <div class="notification">3</div>
+            </div>
+            <div class="username">
+                <a id="usernameLink">[ ENTERING NAME ]</a>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <input type="text" id="newUsername" placeholder="Username">
+            <button onclick="updateName()">set</button>
+            <input type="text" id="avatarUrl" placeholder="URL Avatar Image">
+            <button onclick="updateProfile()">set</button>
+        </div>
+
+        <div class="contact-input">
+            <h1>Phone Number list</h1>
+            <input type="text" id="contactName" placeholder="Name">
+            <input type="tel" id="contactPhone" placeholder="Phone Number">
+            <button onclick="addContact()">add</button>
+            <button onclick="exportContacts()">Export</button>
+            <h3>No. | Name | Phone Number</h3>
+        </div>
+
+        <ul id="contactList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
